@@ -2,13 +2,12 @@ import React from 'react'
 import { useAlert } from "./alert/AlertContext";
 
 export const Main = () => {
-  // const toggle = useAlertToggle()
-  const { toggle } = useAlert()
+  const { show } = useAlert()
 
   return (
     <>
       <h1>Hello in the example with Context</h1>
-      <button onClick={toggle} className="btn btn-success">Show alert</button>
+      <button onClick={() => show('This text from Main.js')} className="btn btn-success">Show alert</button>
     </>
   )
 }
