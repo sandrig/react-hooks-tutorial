@@ -13,4 +13,3 @@ export const App = () => {
     </AlertProvider>
   )
 }
-
